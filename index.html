@@ -15,6 +15,26 @@
 
   gtag('config', 'AW-16880083973');
 </script>
+<!-- Event snippet for test conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16880083973/1OC7CM7L_Z8aEIXIhvE-',
+      'value': 1.0,
+      'currency': 'TRY',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 <body>
     <div id=in-page-channel-node-id data-channel-name=in_page_channel_rPg6vF></div><iframe allow=join-ad-interest-group data-tagging-id=AW-16821749329 data-load-time=1739538678106 height=0 width=0 style=display:none;visibility:hidden></iframe><iframe allow=join-ad-interest-group data-tagging-id=AW-16821749329/4lE3CNzqkosaENGMntU-
         data-load-time=1739538678112 height=0 width=0 style=display:none;visibility:hidden></iframe>
