@@ -86,8 +86,6 @@ body {
 }
 
 .button-group {
-    display: flex;
-    gap: 10px;
     margin-top: 15px;
 }
 
@@ -148,6 +146,53 @@ footer a:hover {
         min-height: auto;
         padding: 15px 0;
     }
+
+    /* Mobil kart stilleri */
+    .model-card {
+        margin-bottom: 10px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .button-group {
+        margin-top: 8px;
+    }
+
+    .btn {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    /* Container padding ayarı */
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* Row spacing ayarı */
+    .row {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    /* Column spacing ayarı */
+    [class*="col-"] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 /* Logo Stili */
@@ -164,6 +209,47 @@ footer a:hover {
 .btn-primary:hover {
     background-color: #e600d4 !important;
     border-color: #e600d4 !important;
+}
+
+.btn-primary-row2 {
+    background-color: #8500ff !important;
+    border-color: #8500ff !important;
+}
+
+.btn-primary-row2:hover {
+    background-color: #7200db !important;
+    border-color: #7200db !important;
+}
+
+.btn-primary-row3 {
+    background-color: #0089ff !important;
+    border-color: #0089ff !important;
+}
+
+.btn-primary-row3:hover {
+    background-color: #0074d9 !important;
+    border-color: #0074d9 !important;
+}
+
+.btn-primary-row4 {
+    background-color: #ffe000 !important;
+    border-color: #ffe000 !important;
+    color: #000 !important;
+}
+
+.btn-primary-row4:hover {
+    background-color: #e6ca00 !important;
+    border-color: #e6ca00 !important;
+}
+
+.btn-primary-row5 {
+    background-color: #ff5e00 !important;
+    border-color: #ff5e00 !important;
+}
+
+.btn-primary-row5:hover {
+    background-color: #e65400 !important;
+    border-color: #e65400 !important;
 }
 
 .btn-success {
@@ -435,4 +521,69 @@ footer a:hover {
         font-size: 1.2rem;
         margin: 0 15px;
     }
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    color: white;
+}
+
+.btn-whatsapp i {
+    margin-right: 5px;
+}
+
+/* Tier Başlıkları */
+.gold-title, .silver-title, .bronze-title {
+    display: none;
+}
+
+/* Tier Kartları */
+#gold-tier .model-card {
+    border: 2px solid #EABF14;
+    box-shadow: 0 0 15px rgba(234, 191, 20, 0.2);
+}
+
+#silver-tier .model-card {
+    border: 2px solid #BFBFBF;
+    box-shadow: 0 0 15px rgba(191, 191, 191, 0.2);
+}
+
+#bronze-tier .model-card {
+    border: 2px solid #509ede;
+    box-shadow: 0 0 15px rgba(80, 158, 222, 0.2);
+}
+
+/* Hover Efektleri */
+#gold-tier .model-card:hover {
+    box-shadow: 0 0 20px rgba(234, 191, 20, 0.4);
+}
+
+#silver-tier .model-card:hover {
+    box-shadow: 0 0 20px rgba(191, 191, 191, 0.4);
+}
+
+#bronze-tier .model-card:hover {
+    box-shadow: 0 0 20px rgba(80, 158, 222, 0.4);
+}
+
+/* İlan Ver Badge */
+.verified-badge.bronze {
+    color: #FF5722;
+}
+
+/* İlan Ver Kartları */
+#advertise-tier .model-card {
+    border: 2px solid #E8E8E8;
+    box-shadow: 0 0 15px rgba(232, 232, 232, 0.2);
+}
+
+#advertise-tier .model-card:hover {
+    box-shadow: 0 0 20px rgba(232, 232, 232, 0.4);
 } 
